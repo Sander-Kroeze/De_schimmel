@@ -1,1 +1,0 @@
-echo # De_schimmel
