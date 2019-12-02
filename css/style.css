@@ -6,3 +6,7 @@
     border: black solid 2px;
     margin: 10px;
 }
+
+.CenterRow {
+    text-align: center;
+}
