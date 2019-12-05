@@ -31,7 +31,7 @@
         };
         // draw chart on load
         var chart = new google.visualization.LineChart(
-            document.getElementById("chart_div")
+            document.getElementById("chart_div3")
         );
         chart.draw(data, options);
 
@@ -71,5 +71,5 @@
 </script>
 
 <div class="CenterRow">
-    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+    <div id="chart_div3" style="width: 100%; height: 500px;"></div>
 </div>

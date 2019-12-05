@@ -1,24 +1,3 @@
-<?php
-//function weightCheck()
-//{
-////Gets the date of today
-//    $dateNowWeight = date('Y-m-d h:i:sa');
-//
-//    //Gets the right json file
-//    $jsonWeight = file_get_contents('pages/schimmel.json');
-//    $jsonDataWeight = json_decode($jsonWeight, true);
-//
-//    //selects from the json file the right data
-//    $load1 = $jsonDataWeight['load1'];
-//    $load1 = $jsonDataWeight['load1'];
-//
-//
-//    echo '<br>Tijd op het punt van meten: '.$dateNowWeight.'';
-//}
-//weightCheck();
-
-?>
-
 <html>
 <head>
     <script type="text/javascript" src="schimmel.json"></script>
@@ -39,6 +18,7 @@
                     var weightLoad3 = myObj.load3;
 
                     getWeight(weightLoad1, weightLoad2, weightLoad3);
+
 
                     //If the load is not right give error message
                     if (weightLoad1 < 79 && weightLoad1 > 96 ){
@@ -74,7 +54,7 @@
 
                 //Right options for the indicators
                 var options = {
-                    width: 300, height: 120,
+                    width: 350, height: 220,
                     yellowColor: "#f21505",
                     redFrom: 0, redTo: 79,
                     greenFrom: 80, greenTo: 95,
@@ -82,7 +62,7 @@
                     minorTicks: 10
                 };
 
-                var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+                var chart = new google.visualization.Gauge(document.getElementById('chart_div1'));
                 chart.draw(data, options);
 
             }
@@ -90,6 +70,11 @@
     </script>
 </head>
 <body>
-<div id="chart_div" style="width: 400px; height: 120px;"></div>
+
+<div class="col-md-12 title">
+    <h3>Gewicht</h3>
+</div>
+
+<div id="chart_div1" style="width: 400px; height: 120px;"></div>
 </body>
 </html>

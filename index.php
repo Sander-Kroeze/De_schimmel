@@ -16,20 +16,20 @@
     <div class="row">
         <div class="col-12">
             Olaf
-            <?php include(''); ?>
+            <?php include('pages/weight.php'); ?>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
             Sander
-            <?php include(''); ?>
+            <?php include('pages/stockPrice.php'); ?>
         </div>
 
     </div>
     <div class="row">
         <div class="col-12">
-            Jan ik
-            <?php include(''); ?>
+            Yannick
+            <?php include('pages/temperature.php'); ?>
         </div>
     </div>
 </div>
